@@ -10,14 +10,15 @@ header {
     background: linear-gradient(to right, #5d59c0, #585ec5, #5363c9, #4e68cd, #486dd1, #4575d7, #437ddc, #4185e1, #4592e8, #4b9eef, #54abf5, #5fb7fb);
 }
 
-.header-topo{
+.header-topo {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
-    
+
 }
 
-.header-topo, a{
+.header-topo,
+a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -30,7 +31,7 @@ header {
 }
 
 .img-pesquisar {
-    background-color:  rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     height: 15px;
     width: 15px;
     padding: 15px;
@@ -39,17 +40,17 @@ header {
     border-bottom-left-radius: 3px;
 }
 
-.input-pesquisar{
+.input-pesquisar {
     width: 730px;
     background-color: rgba(255, 255, 255, 0.2);
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border: none;
     color: white;
-    
+
 }
 
-.input-pesquisar::placeholder{
+.input-pesquisar::placeholder {
     color: white;
 }
 
@@ -68,12 +69,16 @@ header {
     width: 100%;
 }
 
-.cardUm, .cardDois, .cardTres, .cardQuatro {
-    height: 150px;
+.cardUm,
+.cardDois,
+.cardTres,
+.cardQuatro {
+    height: 200px;
     width: 750px;
     background-color: #ffff;
     margin: 30px;
     padding: 5px;
+    box-sizing: border-box;
 }
 
 .card-topo {
@@ -82,58 +87,82 @@ header {
     margin: 10px;
 }
 
-.dateUm, .dateDois, .dateTres, .dateQuatro{
+.dateUm,
+.dateDois,
+.dateTres,
+.dateQuatro {
     font-size: 10px;
     color: #717171;
+    box-sizing: border-box;
 }
 
-.tituloUm, .tituloDois, .tituloTres, .tituloQuatro {
+.tituloUm,
+.tituloDois,
+.tituloTres,
+.tituloQuatro {
     font-size: 30px;
     margin: 10px;
+    box-sizing: border-box;
 }
 
-.assuntoUm, .assuntoDois, .assuntoTres, .assuntoQuatro {
+.assuntoUm,
+.assuntoDois,
+.assuntoTres,
+.assuntoQuatro {
     font-size: 15x;
     margin: 10px;
+    box-sizing: border-box;
 }
 
-#icon {
+#icon,
+#iconDois,
+#iconTres,
+#iconQuatro {
     fill: #574ae801;
     stroke: #574ae8;
     stroke-width: 7;
     transition: fill 0.3s;
     cursor: pointer;
-  }
-  
-  #icon.filled,
-  #icon:hover {
+}
+
+#icon.filled,
+#iconDois.filled,
+#iconTres.filled,
+#iconQuatro.filled,
+#icon:hover, #iconDois:hover, #iconTres:hover, #iconQuatro:hover   {
     fill: #574ae8;
-  }
+}
 
-  
 
-  @media screen and (max-width: 750px) {
-    .input-pesquisar{
+
+@media screen and (max-width: 750px) {
+    .input-pesquisar {
         width: 300px;
-        
+
     }
-    
-    .cardUm, .cardDois, .cardTres, .cardQuatro {
+
+    .cardUm,
+    .cardDois,
+    .cardTres,
+    .cardQuatro {
         height: 250px;
         width: 250px;
         margin: 10px;
     }
 
-    .tituloUm, .tituloDois, .tituloTres, .tituloQuatro {
+    .tituloUm,
+    .tituloDois,
+    .tituloTres,
+    .tituloQuatro {
         font-size: 20px;
-        
+
     }
-    
-    .assuntoUm, .assuntoDois, .assuntoTres, .assuntoQuatro {
+
+    .assuntoUm,
+    .assuntoDois,
+    .assuntoTres,
+    .assuntoQuatro {
         font-size: 12px;
 
     }
-  }
-
-
- 
+}
